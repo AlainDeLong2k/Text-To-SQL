@@ -10,7 +10,7 @@ genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 def get_gemini_response(prompt, question):
     # model = genai.GenerativeModel("gemini-1.5-flash")
     model = genai.GenerativeModel("gemini-pro")
-    response = model.generate_content([prompt[0], question])
+    response = model.generate_content([prompt, question])
     return response.text
 
 
@@ -29,8 +29,7 @@ def read_sql_query(sql, db):
 
 
 # Define prompt
-prompt = [
-    """
+prompt = """
     You are an expert in converting English questions to SQL query!
     The SQL database has 4 tables include STUDENT, LECTURER, COURSE, REGISTRATION FORM.
     STUDENT has the following columns - ID_STU(primary key), NAME_STU, BIRTHDAY_STU and BIRTHPLACE_STU.
@@ -50,7 +49,6 @@ prompt = [
 
     note that the SQL code must not start and end with ``` and must not contain the "sql" word in output.
 """
-]
 
 # Streamlit App
 st.set_page_config(page_title="Text to SQL")
