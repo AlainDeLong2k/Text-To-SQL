@@ -130,6 +130,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+Text-To-SQL/
 
 # Spyder project settings
 .spyderproject

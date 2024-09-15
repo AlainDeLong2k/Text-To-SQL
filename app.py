@@ -1,4 +1,3 @@
-import os
 import streamlit as st
 import sqlite3
 import google.generativeai as genai
@@ -43,7 +42,7 @@ prompt = [
     Example 1 - How many entries of STUDENT table are present?,
     the SQL command will be something like this SELECT COUNT(*) FROM STUDENT;
     Example 2 - Tell me all the students having birthplace Hải Phòng?,
-    the SQL command will be something like this SELECT * FROM STUDENT WHERE BIRTHPLACE = 'Hải Phòng';
+    the SQL command will be something like this SELECT * FROM STUDENT WHERE BIRTHPLACE_STU = 'Hải Phòng';
     Example 3 - Tell me all the course lecturer Đặng Quốc Việt teaching?,
     the SQL command will be something like this SELECT B.NAME_COU FROM LECTURER A JOIN COURSE B ON A.ID_LEC = B.ID_LEC WHERE A.NAME_LEC = 'Đặng Quốc Việt';
     Example 4- Tell me all the students studying 2 or more classes?,
