@@ -68,3 +68,12 @@ The application interacts with the following tables in the SQLite database:
      streamlit run app.py
 5. **Access the Application**
    Open your browser and navigate to http://localhost:8501 to use the application.
+
+## How to Use
+1. Enter your question in English into the input field.
+2. Click the "Ask the question" button to receive the corresponding SQL command.
+3. The query results will be displayed below.
+
+## Testing and Maintenance
+- Ensure that the SQLite database is properly set up with the required tables and data.
+- Review and enhance the prompt in the AI model configuration to improve the accuracy of the SQL commands.
