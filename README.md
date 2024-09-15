@@ -33,8 +33,8 @@ The application interacts with the following tables in the SQLite database:
 
 - **REGISTRATION_FORM**  
   - ID_REG (primary key)  
-  - ID_COU (foreign key referencing COURSE)  
-  - ID_STU (foreign key referencing STUDENT)  
+  - ID_COU (foreign key references COURSE)  
+  - ID_STU (foreign key references STUDENT)  
 
 ## Installation  
 
@@ -55,5 +55,16 @@ The application interacts with the following tables in the SQLite database:
 
 2. **Install Required Libraries**
    Use pip to install the necessary libraries:
-  ```bash
-  pip install -r requirements.txt
+    ```bash
+    pip install -r requirements.txt
+3. **Configure API Key**
+   Create a secrets.toml file in the root directory of the project and add your Google API key:
+     ```bash
+     [general]  
+     GOOGLE_API_KEY = "YOUR_GOOGLE_API_KEY"
+4. **Run the Application**
+   Open the terminal and run the following command:
+     ```bash
+     streamlit run app.py
+5. **Access the Application**
+   Open your browser and navigate to http://localhost:8501 to use the application.
