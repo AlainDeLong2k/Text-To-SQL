@@ -1,8 +1,8 @@
-# Text to SQL  
+# Text To SQL  
 
 ## Introduction  
 
-Gemini App is a Streamlit application that allows users to ask questions in English and generates corresponding SQL commands to retrieve data from a SQLite database. The application utilizes Google's Generative AI model to transform natural language questions into SQL commands, executing them to return the results.
+Text To SQL is a Streamlit application that allows users to ask questions in English and generates corresponding SQL commands to retrieve data from a SQLite database. The application utilizes Google's Generative AI model to transform natural language questions into SQL commands, executing them to return the results.
 
 ## Features  
 
