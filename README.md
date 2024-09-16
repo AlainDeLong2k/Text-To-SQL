@@ -36,6 +36,9 @@ The application interacts with the following tables in the SQLite database:
   - ID_COU (foreign key references COURSE)  
   - ID_STU (foreign key references STUDENT)  
 
+## Deploying
+- Text To SQL deployed website: (Text To SQL)[https://alaindelong-text-to-sql.hf.space/]
+
 ## Installation  
 
 ### Requirements  
